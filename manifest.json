@@ -1,0 +1,18 @@
+{
+	"name": "Bj-Share Ajax Provider",
+	"version": "1.0",
+    "background_page": "background.html",
+	"description": "Bj-Share Ajax Provider",
+	"icons":{
+		"128":"icon_128.png"
+	},
+	"content_scripts": [
+    {
+      "matches": ["http://www.bj-share.net/*"],
+      "js": ["jquery.min.js", "script.js"]
+    }
+  ],
+    "permissions": [
+    "tabs", "http://www.bj-share.net/*"
+  ]
+}
